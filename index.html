@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaParts - Industrial Hoses, Couplings & Fittings Supplier</title>
+    <style>
+:root {
+    /* Softer NexaParts palette */
+    --blue-main:  #0d63b7;
+    --blue-dark:  #084a8a;
+    --blue-soft:  #e1ecff;
+
+    --orange-main: #f6a146;
+    --orange-dark: #e67a26;
+    --orange-soft: #fbe3c3;
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #1a202c;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 50;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        nav .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 0.75rem;   /* smaller space left/right – adjust to taste */
+}
+
+
+
+/* right side: keep language, cart, button on ONE LINE */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* language selector */
+.lang-select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
+    font-weight: 600;
+    background: #ffffff;
+}
+
+/* cart */
+.cart-btn {
+    position: relative;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* badge */
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #ff6600;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+/* get started button – radius matches other buttons */
+nav .btn-started {
+    background: linear-gradient(135deg, #FF8C00 0%, #FF6600 100%);
+    color: #fff;
+    border: none;
+    padding: 0.65rem 1.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 136, 0, 0.3);
+}
+
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            cursor: pointer;
+        }
+
+        nav .logo-badge {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+        }
+
+        nav .logo-text {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0066cc;
+        }
+nav .nav-links {
+    display: flex;            /* 👈 show the menu */
+    gap: 2.5rem;
+    font-size: 15px;
+    font-weight: 600;
+    color: #4a5568;
+    align-items: center;
+}
+
+        
+
+        nav .nav-links a {
+            text-decoration: none;
+            color: #4a5568;
+            transition: all 0.3s;
+        }
+
+        nav .nav-links a:hover {
+            color: #0066cc;
+        }
+
+       .btn-started {
+    background: linear-gradient(135deg, #FF8C00 0%, #FF6600 100%);
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(255, 128, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn-started:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 128, 0, 0.5);
+}
+
+
+
+
+ .hero {
+    margin-top: 0;
+    padding: 3rem 2rem 2.5rem;
+    background: url('..//24/Gemini_Generated_Image_6z0anf6z0anf6z0a.png') center/cover no-repeat;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    min-height: 650px;                      /* a bit shorter overall */
+    display: flex;
+    align-items: center;
+}
+
+
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .03) 25%, rgba(255, 255, 255, .03) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .03) 75%, rgba(255, 255, 255, .03) 76%, transparent 77%, transparent);
+            background-size: 60px 60px;
+            background-color: rgba(0, 51, 122, 0.45); /* Dark Blue Overlay */
+            z-index: 1;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -5%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,136,0,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 12s ease-in-out infinite reverse;
+            z-index: 1;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(30px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-decoration {
+            position: absolute;
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-decoration.pipe1 {
+            top: 10%;
+            right: 5%;
+            width: 200px;
+            height: 200px;
+            animation: rotate 20s linear infinite;
+        }
+
+        .hero-decoration.pipe2 {
+            bottom: 10%;
+            left: 5%;
+            width: 150px;
+            height: 150px;
+            animation: rotate 25s linear infinite reverse;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .hero .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 600px;
+        }
+
+        .hero-content {
+            animation: slideInDown 0.8s ease-out;
+            text-align: center;
+            max-width: 700px;
+            z-index: 3;
+        }
+
+        .hero-decoration-left {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            opacity: 0.45;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-decoration-right {
+            position: absolute;
+            right: 0;
+            bottom: 20%;
+            z-index: 1;
+            opacity: 0.4;
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        @media (max-width: 768px) {
+            .hero-decoration-left,
+            .hero-decoration-right {
+                display: none;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+        }
+
+        .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;        /* was 1.5rem */
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #e0e7ff;
+    margin-bottom: 1.2rem;      /* was 2rem */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+        .search-box {
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 14px;
+    padding: 0.9rem 1.2rem;          /* smaller card */
+    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+    max-width: 520px;                /* narrower card */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+        .search-box label {
+            display: block;
+            font-size: 15px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 1rem;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.85rem 1.2rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-buttons {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .search-box .btn-search {
+            background: linear-gradient(135deg, #FF8C00 0%, #FF6600 100%);
+            color: white;
+            border: none;
+            padding: 0.85rem 1.8rem;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            flex: 1;
+            font-size: 1rem;
+        }
+
+        .search-box .btn-search:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 136, 0, 0.3);
+        }
+
+        .search-box .btn-secondary {
+            background: rgba(0, 102, 204, 0.15);
+            color: #0066cc;
+            border: 2px solid #0066cc;
+            padding: 0.85rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .search-box .btn-secondary:hover {
+            background: rgba(0, 102, 204, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+       .btn-primary {
+    background: linear-gradient(135deg, #f78a2c 0%, #e66b1e 100%);
+    color: white;
+    padding: 1rem 2.2rem;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+
+        .featured-products {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        }
+
+        .featured-products .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: #1a202c;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            transition: all 0.4s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(0, 102, 204, 0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 240px;
+            background: linear-gradient(135deg, #e0e7ff 0%, #dbeafe 50%, #bfdbfe 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .product-info {
+            padding: 1.8rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #e0e7ff 0%, #dbeafe 100%);
+            color: #0052a3;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            width: fit-content;
+        }
+
+        .product-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.8rem;
+        }
+
+        .product-description {
+            font-size: 0.95rem;
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .product-specs {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.2rem;
+        }
+
+        .spec-badge {
+            background-color: #f1f5f9;
+            color: #0052a3;
+            padding: 0.4rem 0.9rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #0066cc;
+            margin-bottom: 1.2rem;
+        }
+
+        .btn-add-cart {
+            width: 100%;
+            background: linear-gradient(135deg, #FF8C00 0%, #FF6600 100%);
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-add-cart:hover {
+            transform: translateY(-2px);
+        }
+
+        .advantages {
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #0d63b7 0%, #084a8a 100%);
+    color: white;
+}
+
+
+        .advantages .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .advantages-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;        /* centers each row, including the last one */
+}
+
+.advantage-card {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 2.5rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardFadeUp 0.8s ease-out forwards;
+
+    width: 280px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px); /* Only translate here */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
+}
+
+
+
+       .advantage-icon {
+    animation: floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+
+        .how-it-works {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        }
+
+        .how-it-works .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .step-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    text-align: center;
+    border: 2px solid #e2e8f0;
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(0, 102, 204, 0.15);
+    border-color: #0066cc;
+}
+
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+            color: white;
+            border-radius: 50%;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .categories {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+        }
+
+        .categories .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+       .categories-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));  /* 3 cards per row on large screens */
+}
+
+/* 2 per row on tablets */
+@media (max-width: 900px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* 1 per row on mobile */
+@media (max-width: 600px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+        .category-card {
+            padding: 2.5rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .category-card:hover {
+            border-color: #0066cc;
+            transform: translateY(-8px);
+        }
+
+        .category-card.selected {
+            border-color: #0066cc;
+            background: linear-gradient(135deg, #e0e7ff 0%, #dbeafe 100%);
+        }
+
+        .category-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .stats {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+            color: white;
+        }
+
+        .stats .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .reviews {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        }
+
+        .reviews .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .review-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+        }
+
+        .review-card h4 {
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+            color: white;
+        }
+
+        .contact .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .btn-consultation {
+            background: linear-gradient(135deg, #FF8C00 0%, #FF6600 100%);
+            color: white;
+            border: none;
+            padding: 1.1rem 2.8rem;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        footer {
+            background-color: #0a1428;
+            color: #cbd5e1;
+            padding: 4rem 2rem;
+        }
+
+        footer .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: white;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header h2 {
+    animation: fadeSlideIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+.section-header p {
+    animation: fadeSlideIn 1.3s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-header h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #FF8C00, #FF6600);
+    border-radius: 4px;
+    transform: translateX(-50%);
+    animation: underlineGrow 1.2s ease-out forwards;
+}
+
+@keyframes underlineGrow {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 120px; /* length of underline */
+        opacity: 1;
+    }
+}
+
+@keyframes cardFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.how-it-works {
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef4ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.how-it-works::before,
+.how-it-works::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0, 102, 204, 0.15), transparent 70%);
+    border-radius: 50%;
+    animation: float 12s ease-in-out infinite;
+    z-index: 0;
+}
+
+.how-it-works::before {
+    top: -100px;
+    left: -80px;
+}
+
+.how-it-works::after {
+    bottom: -130px;
+    right: -80px;
+    animation-direction: reverse;
+}
+
+.category-photo {
+    width: 140px;          /* how wide you want the icon */
+    height: 140px;         /* keep it square; change if you like */
+    object-fit: cover;     /* or 'contain' if you don't want cropping */
+    display: block;
+    margin: 1.5rem auto 1rem;
+    border-radius: 12px;   /* optional: rounded corners */
+}
+
+.review-card .review-content p::before {
+    content: "“";
+    font-size: 2rem;
+    color: #ff7a00;
+    margin-right: 6px;
+    vertical-align: -6px;
+}
+
+/* Get in Touch section styling */
+.contact-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #0366cf 0%, #014fa3 100%);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Cards container */
+.contact-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+/* Single card styling */
+.contact-card {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 2.5rem;
+    width: 320px;
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.16);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Hover animation */
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+    background: rgba(255, 255, 255, 0.16);
+}
+
+/* Icons */
+.contact-card .icon {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    display: block;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
+}
+
+/* Titles */
+.contact-card h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* Text */
+.contact-card p,
+.contact-card a {
+    color: #e8f2ff;
+    margin-top: 0.5rem;
+    display: block;
+    font-size: 1rem;
+}
+
+/* CTA button improvement */
+.contact-btn {
+    margin-top: 3rem;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, #f78a2c, #e66b1e);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+}
+
+
+.contact-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.26);
+}
+
+/* Make "Get in Touch" header look like "Why Choose NexaParts" */
+.contact-section .section-header h2 {
+    color: #ffffff !important;              /* white title */
+    text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+
+.contact-section .section-header p {
+    color: #e2e8f0 !important;              /* light subtitle */
+}
+
+/* Modern, clean header menu */
+nav .nav-links a {
+    color: #1a1a1a;               /* dark text like original NexaParts */
+    text-decoration: none;        /* remove ugly underline */
+    font-weight: 600;
+    position: relative;
+    padding: 4px 0;
+    font-size: 16px;
+    transition: color 0.25s ease;
+}
+
+/* Animated underline */
+nav .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #ff8c00;         /* orange NexaParts accent */
+    border-radius: 2px;
+    transition: width 0.25s ease;
+}
+
+/* Hover effects */
+nav .nav-links a:hover {
+    color: #ff8c00;              /* orange text on hover */
+}
+
+nav .nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Make menu visible on desktop */
+nav .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Hide on small screens */
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: none;
+    }
+}
+
+/* Header action buttons (language + cart) */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+/* Language selector */
+.lang-select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    background: #ffffff;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.lang-select:hover {
+    border-color: #ff8c00;
+}
+
+/* Cart button */
+.cart-btn {
+    position: relative;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease;
+}
+
+.cart-btn:hover {
+    transform: scale(1.15);
+}
+
+/* Item counter badge */
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #ff6600;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+/* Fix logo image size */
+.site-logo {
+    height: 38px;
+    width: auto;
+    display: block;
+}
+
+/* Make header items align properly */
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .btn-started {
+    background: linear-gradient(135deg, #f78a2c 0%, #e66b1e 100%);
+    color: #fff;
+    border: none;
+    padding: 0.65rem 1.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+
+/* Restore proper header size */
+nav {
+    background: #ffffff;
+    padding: 1rem 0;         /* vertical breathing space */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 0.5rem;   /* smaller space left/right – adjust to taste */
+}
+
+
+/* --- Modern Testimonial Cards --- */
+
+.reviews-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid #e5e9f2;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.07);
+    max-width: 420px;
+    flex: 1;
+    transition: all 0.3s ease;
+    display: flex;
+    gap: 1.4rem;
+    align-items: flex-start;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 28px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Avatar */
+.review-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #005ad6, #007dff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Name + text container */
+.review-content h4 {
+    margin: 0;
+    font-size: 1.15rem;
+    color: #111827;
+}
+
+.review-content p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    color: #4b5563;
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+
+/* Quote mark styling */
+.review-content p::before {
+    content: "“";
+    font-size: 2rem;
+    color: #ff8c00;
+    margin-right: 4px;
+    vertical-align: -6px;
+}
+
+footer {
+    background-color: #0a1428;
+    color: #cbd5e1;
+    padding: 4rem 2rem;
+}
+
+footer .container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* grid layout */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+/* column headings */
+.footer-col h4 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* lists */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* links */
+footer a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff8c00;
+}
+
+/* social icons */
+.footer-social a {
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+/* bottom line */
+.footer-bottom {
+    border-top: 1px solid #1f2937;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+/* Floating help button */
+.help-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2000;
+}
+
+.help-button {
+    background: #ff7a00;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.help-button:hover {
+    background: #ff8f1e;
+    transform: scale(1.08);
+}
+
+/* Help window */
+.help-box {
+    position: absolute;
+    bottom: 75px;
+    right: 0;
+    width: 260px;
+    background: #fff;
+    padding: 1.4rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(15px);
+    transition: all 0.3s ease-in-out;
+}
+
+.help-box.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.help-box h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    color: #0a1428;
+}
+
+.help-option {
+    display: block;
+    padding: 0.6rem;
+    margin: 0.4rem 0;
+    background: #f1f5f9;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #111;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+
+.help-option:hover {
+    background: #e8eef6;
+}
+
+.help-close {
+    width: 100%;
+    margin-top: 0.8rem;
+    padding: 0.5rem;
+    background: #e2e8f0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ============================= */
+/* Softer color overrides        */
+/* ============================= */
+
+/* Logo badge */
+nav .logo-badge {
+    background: linear-gradient(135deg, var(--blue-main), var(--blue-dark));
+    box-shadow: 0 4px 15px rgba(8, 74, 138, 0.35);
+}
+
+/* Main buttons */
+.btn-primary,
+.search-box .btn-search,
+.btn-add-cart,
+.btn-consultation,
+.contact-btn {
+    background: linear-gradient(135deg, var(--orange-main), var(--orange-dark));
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+}
+
+/* Header “Get Started” */
+nav .btn-started {
+    background: linear-gradient(135deg, var(--orange-main), var(--orange-dark));
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+/* Secondary orange accents (links underline, etc.) */
+.section-header h2::after,
+.review-content p::before {
+    background: linear-gradient(90deg, var(--orange-main), var(--orange-dark));
+}
+
+/* Stats & other blue sections */
+.stats {
+    background: linear-gradient(135deg, var(--blue-main), var(--blue-dark));
+}
+
+.contact-section {
+    background: linear-gradient(180deg, var(--blue-main), var(--blue-dark));
+}
+
+/* Advantages block (override inline style) */
+.advantages {
+    background: linear-gradient(180deg, var(--blue-main), var(--blue-dark)) !important;
+}
+
+/* Category hover/selected borders */
+.category-card:hover,
+.category-card.selected {
+    border-color: var(--blue-main);
+}
+
+.category-card.selected {
+    background: linear-gradient(135deg, var(--blue-soft), #f3f7ff);
+}
+
+/* Review avatars – default and 2nd orange one */
+.review-avatar {
+    background: linear-gradient(135deg, #005ad6, #007dff);
+}
+
+.reviews-grid .review-card:nth-child(2) .review-avatar {
+    background: linear-gradient(135deg, var(--orange-main), var(--orange-dark)) !important;
+}
+
+/* Help widget button */
+.help-button {
+    background: var(--orange-main);
+}
+
+.help-button:hover {
+    background: var(--orange-dark);
+}
+
+/* Cart counter badge */
+.cart-count {
+    background: var(--orange-dark);
+}
+
+/* Header links hover underline color */
+nav .nav-links a::after {
+    background: var(--orange-main);
+}
+
+nav .nav-links a:hover {
+    color: var(--orange-main);
+}
+
+/* Disable hero animations */
+.hero-content,
+.hero-decoration.pipe1,
+.hero-decoration.pipe2,
+.hero-decoration-left,
+.hero-decoration-right {
+    animation: none !important;
+}
+
+/* Completely remove the old floating hero decorations */
+.hero-decoration-left,
+.hero-decoration-right,
+.hero-decoration {
+    display: none !important;
+}
+
+
+    </style>
+</head>
+<div class="help-widget">
+    <button class="help-button" onclick="toggleHelp()">
+        💬
+    </button>
+
+    <div class="help-box" id="helpBox">
+        <h4>Need Help?</h4>
+        <p>We’re here to assist you! Choose an option below:</p>
+
+        <a href="mailto:info@nexaparts.com" class="help-option">📧 Email Support</a>
+        <a href="https://www.nexaparts.com/contact" class="help-option" target="_blank">📄 Contact Form</a>
+        <a href="#" class="help-option">💬 Live Chat (coming soon)</a>
+
+        <button class="help-close" onclick="toggleHelp()">Close</button>
+    </div>
+</div>
+
+<body>
+
+ <nav>
+    <div class="container">
+        <!-- left: logo -->
+        <div class="logo">
+            <div class="logo-badge">NP</div>
+            <div class="logo-text">NexaParts</div>
+        </div>
+
+        <!-- middle: menu -->
+        <div class="nav-links">
+            <a href="#products">Products</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#categories">Categories</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!-- right: language + cart + button (ALL in one line) -->
+        <div class="nav-actions">
+            <select class="lang-select">
+                <option value="en">EN</option>
+                <option value="de">DE</option>
+                <option value="fr">FR</option>
+            </select>
+
+            <div class="cart-btn">
+                🛒
+                <span class="cart-count">0</span>
+            </div>
+
+            <button class="btn-started">Get Started</button>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    <section class="hero">
+        <svg class="hero-decoration-left" viewBox="0 0 200 300" width="250" height="350" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="20" width="30" height="200" fill="none" stroke="#FF8C00" stroke-width="2" opacity="0.8"/>
+            <rect x="50" y="40" width="30" height="180" fill="none" stroke="#0066cc" stroke-width="2" opacity="0.7"/>
+            <rect x="90" y="50" width="30" height="170" fill="none" stroke="#FF6600" stroke-width="2" opacity="0.6"/>
+            
+            <circle cx="25" cy="220" r="8" fill="none" stroke="#FF8C00" stroke-width="2.5" opacity="0.9"/>
+            <circle cx="65" cy="220" r="8" fill="none" stroke="#0066cc" stroke-width="2.5" opacity="0.8"/>
+            <circle cx="105" cy="220" r="8" fill="none" stroke="#FF6600" stroke-width="2.5" opacity="0.7"/>
+            
+            <path d="M 25 220 Q 50 240 65 220" fill="none" stroke="#0066cc" stroke-width="2.5" opacity="0.6"/>
+            <path d="M 65 220 Q 85 240 105 220" fill="none" stroke="#FF8C00" stroke-width="2.5" opacity="0.6"/>
+            
+            <rect x="20" y="100" width="12" height="12" fill="#FF8C00" opacity="0.8"/>
+            <rect x="60" y="120" width="12" height="12" fill="#0066cc" opacity="0.7"/>
+            
+            <circle cx="25" cy="50" r="4" fill="#FF6600" opacity="0.8"/>
+            <circle cx="105" cy="80" r="4" fill="#FF8C00" opacity="0.8"/>
+        </svg>
+
+        <svg class="hero-decoration-right" viewBox="0 0 200 300" width="280" height="380" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="25" fill="none" stroke="#FF8C00" stroke-width="2.5" opacity="0.8"/>
+            <circle cx="50" cy="50" r="15" fill="none" stroke="#0066cc" stroke-width="1.5" opacity="0.7"/>
+            
+            <circle cx="120" cy="100" r="30" fill="none" stroke="#0066cc" stroke-width="2.5" opacity="0.7"/>
+            <circle cx="120" cy="100" r="18" fill="none" stroke="#FF6600" stroke-width="1.5" opacity="0.6"/>
+            
+            <circle cx="80" cy="180" r="28" fill="none" stroke="#FF8C00" stroke-width="2.5" opacity="0.75"/>
+            <circle cx="80" cy="180" r="16" fill="none" stroke="#0066cc" stroke-width="1.5" opacity="0.65"/>
+            
+            <path d="M 50 75 L 100 85" stroke="#FF6600" stroke-width="2.5" opacity="0.6"/>
+            <path d="M 120 130 L 90 160" stroke="#0066cc" stroke-width="2.5" opacity="0.55"/>
+            
+            <rect x="35" y="35" width="8" height="8" fill="#FF8C00" opacity="0.8" transform="rotate(45 39 39)"/>
+            <rect x="110" y="85" width="10" height="10" fill="#FF6600" opacity="0.75" transform="rotate(45 115 90)"/>
+            <rect x="70" y="170" width="9" height="9" fill="#FF8C00" opacity="0.7" transform="rotate(45 74.5 174.5)"/>
+            
+            <circle cx="50" cy="50" r="5" fill="#FF6600" opacity="0.8"/>
+            <circle cx="120" cy="100" r="6" fill="#FF8C00" opacity="0.75"/>
+            <circle cx="80" cy="180" r="5" fill="#FF6600" opacity="0.7"/>
+        </svg>
+
+        <div class="container">
+            <div class="hero-content">
+                <h1>Industrial Hoses, Couplings & Fittings Supplier</h1>
+                <p>Over 7,000 products in stock. High-quality technical components for construction, industry, and installation technology.</p>
+
+                <div class="search-box">
+                    <label>🔍 Search Our Inventory</label>
+                    <input type="text" id="productSearch" placeholder="Search hoses, couplings, fittings...">
+                    <div class="search-buttons">
+                        <button class="btn-search" onclick="searchProducts()">Find Products</button>
+                        <button class="btn-secondary">Browse Catalog</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Premium quality industrial components from NexaParts catalog</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src=".//Gemini_Generated_Image_dkid25dkid25dkid копия.png">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-tag">Hoses</div>
+                        <div class="product-name">Hydraulic Pressure Hose</div>
+                        <div class="product-description">High-pressure hydraulic hose EN 286 4SP with reinforced construction</div>
+                        <div class="product-specs">
+                            <span class="spec-badge">EN 286 4SP</span>
+                            <span class="spec-badge">Stainless Steel</span>
+                        </div>
+                        <div class="product-price">From €24.99</div>
+                        <button class="btn-add-cart" onclick="window.location.href='https://www.nexaparts.com/hoses/oil-and-petrol-hoses/hydraulic-hoses/'">View on NexaParts</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../24/dry-break-coupling-tank-unit-x-flange-en1092-3-quot-ss-316.png" alt="Dry Break Coupler" onerror="this.src='https://via.placeholder.com/300x240?text=Dry+Break+Coupler'">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-tag">Couplings</div>
+                        <div class="product-name">Dry Break Coupler</div>
+                        <div class="product-description">Professional dry break coupling with automatic shutoff</div>
+                        <div class="product-specs">
+                            <span class="spec-badge">Quick Connect</span>
+                            <span class="spec-badge">Aluminum</span>
+                        </div>
+                        <div class="product-price">From €49.99</div>
+                        <button class="btn-add-cart" onclick="window.location.href='https://www.nexaparts.com/couplings/dry-disconnect-couplings/'">View on NexaParts</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="..//24/bonfix-compression-fitting-straight-coupling-42x42mm-brass.png" alt="Agriculture Drip Line" onerror="this.src='https://via.placeholder.com/300x240?text=Drip+Line'">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-tag">Irrigation</div>
+                        <div class="product-name">Agriculture Drip Line</div>
+                        <div class="product-description">Professional-grade irrigation drip hose for agricultural applications</div>
+                        <div class="product-specs">
+                            <span class="spec-badge">UV Resistant</span>
+                            <span class="spec-badge">Flexible</span>
+                        </div>
+                        <div class="product-price">From €16.99</div>
+                        <button class="btn-add-cart" onclick="window.location.href='https://www.nexaparts.com/irrigation/irrigation-installations/drip-irrigation/'">View on NexaParts</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src=".//underground-drip-hose-pe-2-3-l-h-pressure-compensating-16mm-100m.png" alt="Compression Fittings" onerror="this.src='https://via.placeholder.com/300x240?text=Compression+Fittings'">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-tag">Fittings</div>
+                        <div class="product-name">Compression Fittings</div>
+                        <div class="product-description">Premium brass compression fittings for installation systems</div>
+                        <div class="product-specs">
+                            <span class="spec-badge">Brass Body</span>
+                            <span class="spec-badge">All Sizes</span>
+                        </div>
+                        <div class="product-price">From €8.99</div>
+                        <button class="btn-add-cart" onclick="window.location.href='https://www.nexaparts.com/installation-materials/'">View on NexaParts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="advantages" style="background: linear-gradient(180deg, #004a99 0%, #003a78 100%); color: #ffffff;">
+    <div class="container">
+
+        <div class="section-header" style="color: #ffffff;">
+            <h2 style="color: #ffffff;">Why Choose NexaParts</h2>
+            <p style="color: #e2e8f0;">Trusted since 2017</p>
+        </div>
+
+        <div class="advantages-grid">
+            <div class="advantage-card">
+                <div class="advantage-icon">📦</div>
+                <h3>7,000+ Products</h3>
+                <p>Comprehensive inventory in stock</p>
+            </div>
+
+            <div class="advantage-card">
+                <div class="advantage-icon">🚚</div>
+                <h3>Fast Delivery</h3>
+                <p>Quick turnaround across Europe</p>
+            </div>
+
+            <div class="advantage-card">
+                <div class="advantage-icon">✅</div>
+                <h3>Quality Certified</h3>
+                <p>European standards guarantee</p>
+            </div>
+
+            <div class="advantage-card">
+                <div class="advantage-icon">💼</div>
+                <h3>B2B & B2C</h3>
+                <p>Competitive pricing for all</p>
+            </div>
+
+            <div class="advantage-card">
+                <div class="advantage-icon">🤝</div>
+                <h3>Expert Support</h3>
+                <p>Technical advice available</p>
+            </div>
+
+            <div class="advantage-card">
+                <div class="advantage-icon">🏭</div>
+                <h3>Industry Leaders</h3>
+                <p>Trusted by professionals</p>
+            </div>
+        </div>
+
+    </div> <!-- ✅ Correct location -->
+</section>
+
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple 4-step process</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Browse Catalog</h3>
+                    <p>Search our inventory</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Get Advice</h3>
+                    <p>Our experts help</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Place Order</h3>
+                    <p>Quick process</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Reliable shipping</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="categories" id="categories">
+  <div class="container">
+    <div class="section-header">
+      <h2>Product Categories</h2>
+      <p>Find what you need</p>
+    </div>
+
+    <div class="categories-grid">
+      <div class="category-card">
+        <img class="category-photo" src="..//24/unnamed.jpg" alt="Hoses">
+        <h3>Hoses</h3>
+      </div>
+
+      <div class="category-card" onclick="selectCategory(this)">
+  <img class="category-photo" src="..//24/coupling.jpg" alt="Couplings">
+  <h3>Couplings</h3>
+</div>
+
+<div class="category-card" onclick="selectCategory(this)">
+  <img class="category-photo" src="..//24/fittings.jpg" alt="Fittings">
+  <h3>Fittings</h3>
+</div>
+
+<div class="category-card" onclick="selectCategory(this)">
+  <img class="category-photo" src="..//24/irrigation.jpg" alt="Irrigation">
+  <h3>Irrigation</h3>
+</div>
+
+<div class="category-card" onclick="selectCategory(this)">
+  <img class="category-photo" src="..//24/bushings.jpg" alt="Bushings">
+  <h3>Bushings</h3>
+</div>
+
+<div class="category-card" onclick="selectCategory(this)">
+  <img class="category-photo" src="..//24/install.jpg" alt="Installation">
+  <h3>Installation</h3>
+</div>
+ </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">7,000+</div>
+                    <div class="stat-label">Products</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-value">Since 2017</div>
+                    <div class="stat-label">Industry Leader</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-value">European</div>
+                    <div class="stat-label">Quality Standards</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-value">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customer Reviews</h2>
+                <p>Trusted by businesses</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-avatar">JK</div>
+                    <h4>Johannes Köhler</h4>
+                    <p>"Excellent quality and fast delivery!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-avatar" style="background: linear-gradient(135deg, #FF8C00 0%, #FF6600 100%);">SM</div>
+                    <h4>Sarah Mueller</h4>
+                    <p>"Great technical support!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-avatar" style="background: linear-gradient(135deg, #0052a3 0%, #003d7a 100%);">AB</div>
+                    <h4>Andreas Berg</h4>
+                    <p>"Reliable with competitive pricing!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="contact-section" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <p>Visit NexaParts website for more information</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+                <span class="icon">🌐</span>
+                <h3>Website</h3>
+                <a href="https://nexaparts.com" target="_blank">nexaparts.com</a>
+            </div>
+
+            <div class="contact-card">
+                <span class="icon">📧</span>
+                <h3>Email</h3>
+                <p>info@nexaparts.com</p>
+            </div>
+
+            <div class="contact-card">
+                <span class="icon">📞</span>
+                <h3>Contact</h3>
+                <p>Check NexaParts for contact info</p>
+            </div>
+
+        </div>
+
+        <button class="contact-btn">Visit NexaParts</button>
+    </div>
+</section>
+
+    <footer>
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Column 1: Logo + text -->
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom: 1rem;">
+          <div class="logo-badge">NP</div>
+          <div class="logo-text">NexaParts</div>
+        </div>
+        <p>
+          Industrial supply partner for hoses, couplings, fittings and more –
+          trusted by professionals across Europe.
+        </p>
+      </div>
+
+      <!-- Column 2: Quick links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact info -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: <a href="mailto:info@nexaparts.com">info@nexaparts.com</a></li>
+          <li>Website: <a href="https://www.nexaparts.com" target="_blank">nexaparts.com</a></li>
+          <li>Location: Europe-wide distribution</li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Social / extra -->
+      <div class="footer-col">
+        <h4>Stay Connected</h4>
+        <p>Follow NexaParts for updates on new products and offers.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">🔗</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 NexaParts — Industrial Supply Solutions | Premium Hoses, Couplings &amp; Fittings</p>
+    </div>
+  </div>
+</footer>
+
+
+    <script>
+        function searchProducts() {
+            alert('Redirecting to NexaParts catalog...');
+            window.location.href = 'https://www.nexaparts.com/';
+        }
+
+        function selectCategory(element) {
+            var cards = document.querySelectorAll('.category-card');
+            cards.forEach(function(card) {
+                card.classList.remove('selected');
+            });
+            element.classList.add('selected');
+        }
+    </script>
+</body>
+</html>
